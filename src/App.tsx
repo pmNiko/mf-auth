@@ -1,6 +1,6 @@
 import CardContainer from "./remotes/CardContainer";
 
-function App() {
+export default () => {
   return (
     <CardContainer title="CardContainer consumido" showImage>
       <p style={{ textAlign: "center", padding: "4em" }}>
@@ -29,6 +29,4 @@ function App() {
       </div>
     </CardContainer>
   );
-}
-
-export default App;
+};
