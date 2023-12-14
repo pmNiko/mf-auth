@@ -11,9 +11,9 @@ export default defineConfig(({ mode }) => {
       federation({
         filename: "mf-auth-entry.js",
         name: "mf-auth",
-        exposes: {},
-        remotes: {
-          "mfe-shell": process.env.VITE_MFE_SHELL,
+        remotes: {},
+        exposes: {
+          "./RouterAuth": "./src/router/RouterAuth",
         },
         shared: ["react", "react-dom"],
       }),
