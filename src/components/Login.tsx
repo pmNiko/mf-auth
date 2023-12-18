@@ -16,52 +16,57 @@ export default () => {
   };
 
   return (
-    <form
-      onSubmit={(e) => e.preventDefault()}
-      noValidate
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "250px",
-      }}
-    >
-      <TextField
-        label="Email"
-        type="text"
-        placeholder="user@example.com"
-        name="email"
-        onChange={handleChange}
-        variant="standard"
-        sx={{ mb: 2, background: "transparent" }}
-        autoComplete="off"
-      />
-      <TextField
-        label="Password"
-        type="password"
-        placeholder="******"
-        name="password"
-        onChange={handleChange}
-        variant="standard"
-        sx={{ mb: 2, background: "transparent" }}
-      />
-
-      <Box display="flex" justifyContent="space-evenly" mt={4} mb={2}>
-        <Button
-          size="medium"
-          variant="contained"
-          sx={{ textTransform: "capitalize" }}
-          onClick={() => signIn(user.email, user.password)}
-        >
-          <Typography variant="caption"> Iniciar sesión</Typography>
-        </Button>
-      </Box>
-      <Button onClick={signWithGoogle}>
-        <Avatar
-          sx={{ height: 30, width: 30, boxShadow: 2 }}
-          alt="Login"
-          src={"/google.svg"}
+    <Box m="auto" p={2}>
+      <Typography variant="subtitle2" textAlign="center" mb={1}>
+        Inicio de sesión
+      </Typography>
+      <form
+        onSubmit={(e) => e.preventDefault()}
+        noValidate
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "250px",
+        }}
+      >
+        <TextField
+          label="Email"
+          type="text"
+          placeholder="user@example.com"
+          name="email"
+          onChange={handleChange}
+          variant="standard"
+          sx={{ mb: 2, background: "transparent" }}
+          autoComplete="off"
         />
-      </Button>
-    </form>
+        <TextField
+          label="Password"
+          type="password"
+          placeholder="******"
+          name="password"
+          onChange={handleChange}
+          variant="standard"
+          sx={{ mb: 2, background: "transparent" }}
+        />
+
+        <Box display="flex" justifyContent="space-evenly" mt={4} mb={2}>
+          <Button
+            size="medium"
+            variant="contained"
+            sx={{ textTransform: "capitalize" }}
+            onClick={() => signIn(user.email, user.password)}
+          >
+            <Typography variant="caption"> Iniciar sesión</Typography>
+          </Button>
+        </Box>
+        <Button onClick={signWithGoogle}>
+          <Avatar
+            sx={{ height: 30, width: 30, boxShadow: 2 }}
+            alt="Login"
+            src={"/google.svg"}
+          />
+        </Button>
+      </form>
+    </Box>
   );
 };
