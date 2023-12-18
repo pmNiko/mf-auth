@@ -45,7 +45,7 @@ export default () => {
         sx={{ mb: 2, background: "transparent" }}
       />
 
-      <Box display="flex" justifyContent="space-evenly" my={4}>
+      <Box display="flex" justifyContent="space-evenly" mt={4} mb={2}>
         <Button
           size="medium"
           variant="contained"

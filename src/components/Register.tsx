@@ -43,14 +43,14 @@ export default () => {
         sx={{ mb: 2, background: "transparent" }}
       />
 
-      <Box display="flex" justifyContent="space-evenly" mt={4}>
+      <Box display="flex" justifyContent="space-evenly" mt={4} mb={2}>
         <Button
           size="medium"
           variant="contained"
           sx={{ textTransform: "capitalize" }}
           onClick={() => signUp(user.email, user.password)}
         >
-          <Typography variant="caption"> Enviar</Typography>
+          <Typography variant="caption"> Registrarme</Typography>
         </Button>
       </Box>
     </form>

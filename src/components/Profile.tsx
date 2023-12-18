@@ -26,7 +26,7 @@ export default () => {
         {user.name && user.email}
       </Typography>
 
-      <Box display="flex" justifyContent="center" mb={2}>
+      <Box display="flex" justifyContent="center" mt={4} mb={2}>
         <Button
           size="medium"
           variant="contained"
