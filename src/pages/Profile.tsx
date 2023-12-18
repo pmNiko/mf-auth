@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
 import { Box, Button } from "@mui/material";
-import Profile from "../components/Profile";
+import { NavLink } from "react-router-dom";
 import CardContainer from "../components/CardContainer";
+import Profile from "../components/Profile";
 import { Routes } from "../router";
 
 export default ({ basepath = "" }: { basepath?: string }) => {

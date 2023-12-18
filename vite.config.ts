@@ -14,8 +14,9 @@ export default defineConfig(({ mode }) => {
         remotes: {},
         exposes: {
           "./RouterAuth": "./src/router/RouterAuth",
+          "./store": "./src/store",
         },
-        shared: ["react", "react-dom"],
+        shared: ["react", "react-dom", "@emotion/react", "zustand"],
       }),
     ],
     build: {

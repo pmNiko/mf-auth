@@ -1,5 +1,6 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { ChangeEvent, useState } from "react";
+import { signUp } from "../auth/fb-auth";
 
 export default () => {
   const [user, setUser] = useState({ email: "", password: "" });
@@ -47,7 +48,7 @@ export default () => {
           size="medium"
           variant="contained"
           sx={{ textTransform: "capitalize" }}
-          onClick={() => console.log(user.email, user.password)}
+          onClick={() => signUp(user.email, user.password)}
         >
           <Typography variant="caption"> Enviar</Typography>
         </Button>

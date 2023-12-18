@@ -16,7 +16,9 @@
     "react-router-dom": "^6.4.5",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.18"
+    "@mui/material": "^5.14.18",
+    "zustand": "^4.4.7",
+    "firebase": "^10.7.0"
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.3.3",

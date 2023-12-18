@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Routes } from "./index";
 import Login from "../pages/Login";
+import { Routes } from "./index";
 
 const Register = lazy(() => import("../pages/Register"));
 const Profile = lazy(() => import("../pages/Profile"));

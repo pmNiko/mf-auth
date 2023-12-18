@@ -1,8 +1,11 @@
 import { ChangeEvent, useState } from "react";
 import { Avatar, Box, Button, TextField, Typography } from "@mui/material";
+import { signIn, signWithGoogle } from "../auth/fb-auth";
+import { useAuthorize } from "../hooks/useAuthorize";
 
 export default () => {
   const [user, setUser] = useState({ email: "", password: "" });
+  useAuthorize();
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -47,12 +50,12 @@ export default () => {
           size="medium"
           variant="contained"
           sx={{ textTransform: "capitalize" }}
-          onClick={() => console.log(user.email, user.password)}
+          onClick={() => signIn(user.email, user.password)}
         >
           <Typography variant="caption"> Iniciar sesión</Typography>
         </Button>
       </Box>
-      <Button onClick={() => console.log("Google Login")}>
+      <Button onClick={signWithGoogle}>
         <Avatar
           sx={{ height: 30, width: 30, boxShadow: 2 }}
           alt="Login"

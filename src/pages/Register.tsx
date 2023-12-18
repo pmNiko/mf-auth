@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import Register from "../components/Register";
 import { Box, Button } from "@mui/material";
+import { NavLink } from "react-router-dom";
 import CardContainer from "../components/CardContainer";
+import Register from "../components/Register";
 import { Routes } from "../router";
 
 export default ({ basepath = "" }: { basepath?: string }) => {
