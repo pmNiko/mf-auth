@@ -63,9 +63,10 @@
 > - Por último se comparte el store. Este al ser consumido se recomienda definir la interface
 >   para tener inferencia de tipos.
 > - En resumidas cuentas de la store será importante lograr consumir:
->   1- El estado de sesión de usuario
->   2- Iniciar sesión  
->   3- cerrar sesión
+>
+> 1.  Estado de sesión de usuario
+> 2.  Iniciar sesión
+> 3.  Cerrar sesión
 
 <br>
 
