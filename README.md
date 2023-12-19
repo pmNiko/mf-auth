@@ -9,12 +9,6 @@
 
 <br/>
 
-<p align="center">
-  <a href="https://github.com/pmNiko/mfe-auth/wiki">Lea más acerca de su implementación</a>
-</p>
-
-<br/>
-
 ---
 
 <br>
