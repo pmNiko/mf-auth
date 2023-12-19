@@ -52,6 +52,30 @@
 > - VITE_FB_MESSAGING_SENDER_ID
 > - VITE_FB_APP_ID
 
+<br>
+
+> [!NOTE]
+>
+> **Exposición de módulos**
+>
+> - Se expone el enrutador de la app.
+> - También se exponen los componentes de Login y Profile.
+> - Por último se comparte el store. Este al ser consumido se recomienda definir la interface
+>   para tener inferencia de tipos.
+> - En resumidas cuentas de la store será importante lograr consumir:
+>   1- El estado de sesión de usuario
+>   2- Iniciar sesión  
+>   3- cerrar sesión
+
+<br>
+
+> [!CAUTION]
+>
+> **Tener en cuenta**
+>
+> - Las dependencias compartidas deben ser declaradas en el shared de vite.config.js
+> - El app shell deberá tener instalada la dependencia de zustand para poder consumir el módulo.
+
 <br/>
 
 <p align="center" style="color: blue; margin-top: 4rem" >
