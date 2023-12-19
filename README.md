@@ -17,20 +17,6 @@
 
 ---
 
-<br/>
-
-<p align="center" style="color: blue; margin-top: 4rem" >
- Screenshots
-</p>
-
-<p align="center">
-    <img alt="Shell" src="./images/login.png" width="60%" />
-    <img alt="Shell" src="./images/signup.png" width="40%" />
-    <img alt="Shell" src="./images/profile.png" width="45%" />
-</p>
-
----
-
 <br>
 
 > [!NOTE]
@@ -42,8 +28,6 @@
 > - Registro
 > - Inicio de sesión
 > - Perfil
-
----
 
 <br>
 
@@ -57,8 +41,6 @@
 > - De todas maneras es recomendable dirigirse a la documentación oficial de Firebase para
 >   realizar la impelemtación de integración del servicio.
 
----
-
 <br>
 
 > [!IMPORTANT]
@@ -69,3 +51,15 @@
 > - VITE_FB_API_KEY
 > - VITE_FB_MESSAGING_SENDER_ID
 > - VITE_FB_APP_ID
+
+<br/>
+
+<p align="center" style="color: blue; margin-top: 4rem" >
+ Screenshots
+</p>
+
+<p align="center">
+    <img alt="Shell" src="./images/login.png" width="60%" />
+    <img alt="Shell" src="./images/signup.png" width="40%" />
+    <img alt="Shell" src="./images/profile.png" width="45%" />
+</p>
