@@ -17,7 +17,7 @@
 >
 > **Objetivo**
 >
-> - Este MF será el responsable de ññevar a cabo la autentocación del usuario.
+> - Este MF será el responsable de llevar a cabo la autentocación del usuario.
 > - Con esto en mente crearemos las interfaces UI básicas para llevar adelante esta tarea.
 > - Registro
 > - Inicio de sesión
